@@ -114,6 +114,8 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
+  
      <!--Quote calculator start-->
     
 
@@ -373,33 +375,46 @@
                         <h6 class="text-primary">Free Quote</h6>
                         <h1 class="mb-4">Get A Free Quote</h1>
                         <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <form>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSc0BBTqAYdpu-nBO8SDbHGCEuys70pAGAHMFXNTWF4OwGfssg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" name="entry.1687355501" placeholder="Your Name" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" name="entry.924423924" placeholder="Your Email" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" name="entry.1701825234" placeholder="Your Mobile" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
+                                    <select class="form-select border-0" name="entry.1405159619" style="height: 55px;" required>
                                         <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
+                                        <option value="Service 1">Service 1</option>
+                                        <option value="Service 2">Service 2</option>
+                                        <option value="Service 3">Service 3</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                    <textarea class="form-control border-0" name="entry.1372328300" placeholder="Special Note"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
+                        
+                        <!-- Hidden iframe to prevent page reload -->
+                        <iframe name="hidden_iframe" style="display:none;" onload="if(submitted) { alert('Form submitted successfully!'); }"></iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdKo4ByZCmgk9jwx9_iQfgteiNorpsqb0uv7YF6vKq-NpVvVA/viewform?embedded=true" width="640" height="939" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        
+                        <script>
+                            var submitted = false;
+                        </script>
+                        
+                        
+                        
+                        
+                        
                     </div>
                 </div>
             </div>

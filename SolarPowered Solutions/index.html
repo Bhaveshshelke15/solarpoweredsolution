@@ -128,17 +128,13 @@
                                 <h1 class="display-2 text-white animated slideInDown">Harnessing the sun’s energy for a
                                     brighter tomorrow</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">Utilizing renewable energy for a
-                                    sustainable and resilient future</p>
-
-                                    <a href="#" id="quoteBtn" 
-                                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Get a Quote<i
-                                        class="fa fa-arrow-right ms-3"></i></a>
+                                    sustainable and resilient future</p>   
+                                    <a href="javascript:void(0);" onclick="openCalculatorModal()"
+                                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Get A Quote<i
+                    class="fa fa-arrow-right ms-3"></i></a>
 
                             </div>
                         </div>
-                        <a href="#" id="quoteBtn"
-                        class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i
-                            class="fa fa-arrow-right ms-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -152,8 +148,9 @@
                                     panel at a time</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">Experience lower energy costs and
                                     long-term financial benefits</p>
-                                    <a href="#" id="quoteBtn" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Get a Quote<i
-                                        class="fa fa-arrow-right ms-3"></i></a>
+                                    <a href="javascript:void(0);" onclick="openCalculatorModal()"
+                                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Get A Quote<i
+                    class="fa fa-arrow-right ms-3"></i></a>
 
 
                             </div>
@@ -172,7 +169,8 @@
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">Innovative solar technologies for an
                                     eco-friendly tomorrow</p>
                                   
-                                    <a href="#" id="quoteBtn" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Get a Quote<i
+                                    <a href="javascript:void(0);" onclick="openCalculatorModal()"
+                                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Get A Quote<i
                                         class="fa fa-arrow-right ms-3"></i></a>
 
 
@@ -281,7 +279,7 @@
         <!-- Modal Structure for Solar Power Calculator -->
         <div id="quoteModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span> <!-- Close button -->
+                <span class="close" onclick="closeCalculatorModal()">&times;</span>
                 <div class="container2">
                     <h2>Solar Power Calculator</h2>
     
@@ -328,6 +326,16 @@
     
         <!-- JavaScript to Handle Modal and Calculator -->
         <script>
+
+function openCalculatorModal() {
+				document.getElementById("quoteModal").style.display = "block";
+			}
+
+			// Function to close the modal
+			function closeCalculatorModal() {
+				document.getElementById("quoteModal").style.display = "none";
+			}
+            
             // Get the modal
             var modal = document.getElementById("quoteModal");
     
